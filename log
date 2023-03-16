@@ -204,3 +204,14 @@ Thu 16 Mar 2023 03:48:59 PM UTC:
  tests:  1|6
 total_score: 10/70
 1d6ac19
+Thu 16 Mar 2023 03:49:52 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘arrayMaxMin’:
+exercises.c:36:11: error: assignment to ‘int *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+   36 |       max = a[i];
+      |           ^
+cc1: all warnings being treated as errors
+Compilation failed
+dcb2210
