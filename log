@@ -469,3 +469,16 @@ exercises.c:94:12: error: incompatible types when assigning to type ‘Vector’
       |            ^~~~~
 Compilation failed
 c4717c3
+Thu 16 Mar 2023 04:13:56 PM UTC: 
+ exercises.c | 8 ++++++--
+ 1 file changed, 6 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘obtenerValor’:
+exercises.c:107:15: error: format ‘%i’ expects argument of type ‘int’, but argument 2 has type ‘Vector’ [-Werror=format=]
+  107 |     printf(" %i", v[i]);
+      |              ~^   ~~~~
+      |               |    |
+      |               int  Vector
+cc1: all warnings being treated as errors
+Compilation failed
+6a32920
