@@ -848,3 +848,21 @@ Thu 16 Mar 2023 07:32:34 PM UTC:
  tests:  3|4
 total_score: 30/70
 3c53374
+Thu 16 Mar 2023 07:33:14 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:97:3: error: invalid type argument of unary ‘*’ (have ‘int’)
+   97 |   *v->datos[i] = valor;
+      |   ^~~~~~~~~~~~
+exercises.c: In function ‘obtenerValor’:
+exercises.c:107:11: error: invalid type argument of unary ‘*’ (have ‘int’)
+  107 |    return *v->capacidad = i;
+      |           ^~~~~~~~~~~~~
+exercises.c:108:1: error: control reaches end of non-void function [-Werror=return-type]
+  108 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+727160f
