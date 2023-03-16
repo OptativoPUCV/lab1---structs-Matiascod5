@@ -604,3 +604,13 @@ exercises.c:97:1: error: expected identifier or ‘(’ before ‘}’ token
       | ^
 Compilation failed
 f006088
+Thu 16 Mar 2023 04:19:02 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:94:12: error: incompatible types when assigning to type ‘Vector’ from type ‘int’
+   94 |     v[i] = valor;
+      |            ^~~~~
+Compilation failed
+70b22b1
