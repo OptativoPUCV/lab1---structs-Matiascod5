@@ -705,3 +705,14 @@ Thu 16 Mar 2023 04:26:11 PM UTC:
  tests:  3|4
 total_score: 30/70
 942e49d
+Thu 16 Mar 2023 04:31:47 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘obtenerValor’:
+exercises.c:111:15: error: returning ‘int *’ from a function with return type ‘int’ makes integer from pointer without a cast [-Werror=int-conversion]
+  111 |    return v[i].datos;
+      |           ~~~~^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+1677550
