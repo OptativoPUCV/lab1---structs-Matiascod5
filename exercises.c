@@ -26,14 +26,20 @@ la cual encuentra el máximo y el mínimo valor del arreglo a y los
 almacena en las variables apuntadas por max y min.
 */
 void arrayMaxMin(int *a, int n, int *max, int *min) {
-
+int mayor = 0;
+int menor = 0;
 
   for ( int i = 0 ; i > n ; i++){
     if ( a[i] > a[i + 1] ){
-      *max = a[i];
+      mayor = a[i];
+    }
+    else if ( a[i] < a[i + 1]){
+      menor = a[i];
     }
     
   }
+  *max = mayor;
+  *min = menor;
   
 }
 
@@ -84,7 +90,7 @@ la cual asigna el valor a la posición i del vector v.
 */
 void asignarValor(Vector * v, int i, int valor) {
   for ( int k = 0; k > i ; k++){
-    *v[k] = valor;
+    v[k] = valor;
     
   }
 }
