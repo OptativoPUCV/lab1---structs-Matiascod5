@@ -547,3 +547,16 @@ exercises.c:107:12: error: too many arguments for format [-Werror=format-extra-a
 cc1: all warnings being treated as errors
 Compilation failed
 ea2b5e7
+Thu 16 Mar 2023 04:15:10 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘obtenerValor’:
+exercises.c:107:15: error: format ‘%i’ expects argument of type ‘int’, but argument 2 has type ‘Vector’ [-Werror=format=]
+  107 |     printf(" %i", v[j]);
+      |              ~^   ~~~~
+      |               |    |
+      |               int  Vector
+cc1: all warnings being treated as errors
+Compilation failed
+bc4a335
