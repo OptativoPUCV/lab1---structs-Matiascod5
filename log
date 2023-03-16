@@ -522,3 +522,14 @@ exercises.c:107:15: error: format ‘%i’ expects argument of type ‘int’, b
 cc1: all warnings being treated as errors
 Compilation failed
 5671bd2
+Thu 16 Mar 2023 04:14:50 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘obtenerValor’:
+exercises.c:107:16: error: unknown conversion type character ‘v’ in format [-Werror=format=]
+  107 |     printf(" %*v", v[j]);
+      |                ^
+cc1: all warnings being treated as errors
+Compilation failed
+a6963a2
