@@ -866,3 +866,17 @@ exercises.c:108:1: error: control reaches end of non-void function [-Werror=retu
 cc1: all warnings being treated as errors
 Compilation failed
 727160f
+Thu 16 Mar 2023 07:33:52 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘obtenerValor’:
+exercises.c:107:15: error: invalid type argument of ‘->’ (have ‘Vector’)
+  107 |    return v[i]->capacidad;
+      |               ^~
+exercises.c:108:1: error: control reaches end of non-void function [-Werror=return-type]
+  108 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+00939ca
