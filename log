@@ -30,3 +30,18 @@ exercises.c:35:14: error: invalid type argument of unary ‘*’ (have ‘int’
       |              ^~~~~
 Compilation failed
 44f7143
+Thu 16 Mar 2023 03:46:26 PM UTC: 
+ exercises.c | 10 ++++++----
+ 1 file changed, 6 insertions(+), 4 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘arrayMaxMin’:
+exercises.c:33:14: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘==’ token
+   33 |   int vector == *a
+      |              ^~
+exercises.c:33:14: error: expected expression before ‘==’ token
+exercises.c: At top level:
+exercises.c:44:1: error: expected identifier or ‘(’ before ‘}’ token
+   44 | }
+      | ^
+Compilation failed
+a3eb80e
