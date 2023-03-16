@@ -424,3 +424,24 @@ exercises.c:94:12: error: incompatible types when assigning to type ‘Vector’
       |            ^~~~~
 Compilation failed
 a967476
+Thu 16 Mar 2023 04:11:54 PM UTC: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:95:12: error: incompatible types when assigning to type ‘Vector’ from type ‘int’
+   95 |     v[k] = valor
+      |            ^~~~~
+exercises.c:95:17: error: expected ‘;’ before ‘}’ token
+   95 |     v[k] = valor
+      |                 ^
+      |                 ;
+   96 | 
+   97 |   }
+      |   ~              
+exercises.c:94:5: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+   94 |     scanf("%i", &valor);
+      |     ^~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+52f827b
