@@ -108,7 +108,7 @@ int obtenerValor(Vector * v, int i) {
 
   
   
-   return v[i].datos;
+   return v[i].*datos;
 }
 
 /*

@@ -716,3 +716,17 @@ exercises.c:111:15: error: returning ‘int *’ from a function with return typ
 cc1: all warnings being treated as errors
 Compilation failed
 1677550
+Thu 16 Mar 2023 04:31:58 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘obtenerValor’:
+exercises.c:111:16: error: expected identifier before ‘*’ token
+  111 |    return v[i].*datos;
+      |                ^
+exercises.c:112:1: error: control reaches end of non-void function [-Werror=return-type]
+  112 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+21aa30c
