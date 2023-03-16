@@ -928,3 +928,17 @@ exercises.c:108:1: error: control reaches end of non-void function [-Werror=retu
 cc1: all warnings being treated as errors
 Compilation failed
 acb55c3
+Thu 16 Mar 2023 07:35:07 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘obtenerValor’:
+exercises.c:107:24: error: request for member ‘capacidad’ in something not a structure or union
+  107 |    return v[i].datos[i].capacidad;
+      |                        ^
+exercises.c:108:1: error: control reaches end of non-void function [-Werror=return-type]
+  108 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+c49deaa
