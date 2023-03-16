@@ -624,3 +624,14 @@ exercises.c:94:8: error: expected identifier before ‘*’ token
       |        ^
 Compilation failed
 c50cd37
+Thu 16 Mar 2023 04:20:17 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:94:14: error: assignment to ‘int *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+   94 |   v[i].datos = valor;
+      |              ^
+cc1: all warnings being treated as errors
+Compilation failed
+4ac1588
