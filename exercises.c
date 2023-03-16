@@ -104,7 +104,7 @@ la cual retorna el valor en la posición i del vector v.
 int obtenerValor(Vector * v, int i) {
 
   for ( int j = 0 ; j < i ; j++){
-    printf(" %*v", v[j]);
+    printf(" %v[]", v[j]);
   }
   
    return 0;
