@@ -174,3 +174,17 @@ exercises.c:44:1: error: expected identifier or ‘(’ before ‘}’ token
 cc1: all warnings being treated as errors
 Compilation failed
 fff9303
+Thu 16 Mar 2023 03:48:24 PM UTC: 
+ exercises.c | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘arrayMaxMin’:
+exercises.c:40:5: error: expected expression before ‘}’ token
+   40 |     }
+      |     ^
+exercises.c: At top level:
+exercises.c:43:1: error: expected identifier or ‘(’ before ‘}’ token
+   43 | }
+      | ^
+Compilation failed
+636deee
