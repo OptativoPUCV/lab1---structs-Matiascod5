@@ -482,3 +482,17 @@ exercises.c:107:15: error: format ‘%i’ expects argument of type ‘int’, b
 cc1: all warnings being treated as errors
 Compilation failed
 6a32920
+Thu 16 Mar 2023 04:14:11 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘obtenerValor’:
+exercises.c:107:15: error: unknown conversion type character ‘V’ in format [-Werror=format=]
+  107 |     printf(" %Vector", v[i]);
+      |               ^
+exercises.c:107:12: error: too many arguments for format [-Werror=format-extra-args]
+  107 |     printf(" %Vector", v[i]);
+      |            ^~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+9f4815a
