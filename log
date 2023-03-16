@@ -614,3 +614,13 @@ exercises.c:94:12: error: incompatible types when assigning to type ‘Vector’
       |            ^~~~~
 Compilation failed
 70b22b1
+Thu 16 Mar 2023 04:20:10 PM UTC: 
+ exercises.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:94:8: error: expected identifier before ‘*’ token
+   94 |   v[i].*datos = valor;
+      |        ^
+Compilation failed
+c50cd37
