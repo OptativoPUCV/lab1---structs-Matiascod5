@@ -678,3 +678,24 @@ Thu 16 Mar 2023 04:23:51 PM UTC:
  tests:  3|4
 total_score: 30/70
 1709f02
+Thu 16 Mar 2023 04:26:00 PM UTC: 
+ exercises.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+exercises.c: In function ‘obtenerValor’:
+exercises.c:108:12: error: spurious trailing ‘%’ in format [-Werror=format=]
+  108 |   printf(" %")
+      |            ^
+exercises.c:108:15: error: expected ‘;’ before ‘return’
+  108 |   printf(" %")
+      |               ^
+      |               ;
+......
+  111 |    return 0;
+      |    ~~~~~~      
+exercises.c:112:1: error: control reaches end of non-void function [-Werror=return-type]
+  112 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+69ca84f
