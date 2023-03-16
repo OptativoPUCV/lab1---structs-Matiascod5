@@ -459,3 +459,13 @@ exercises.c:94:5: error: ignoring return value of ‘scanf’ declared with attr
 cc1: all warnings being treated as errors
 Compilation failed
 4ae70d3
+Thu 16 Mar 2023 04:12:11 PM UTC: 
+ exercises.c | 1 -
+ 1 file changed, 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:94:12: error: incompatible types when assigning to type ‘Vector’ from type ‘int’
+   94 |     v[k] = valor;
+      |            ^~~~~
+Compilation failed
+c4717c3
