@@ -635,3 +635,13 @@ exercises.c:94:14: error: assignment to ‘int *’ from ‘int’ makes pointer
 cc1: all warnings being treated as errors
 Compilation failed
 4ac1588
+Thu 16 Mar 2023 04:20:30 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:94:9: error: expected identifier before ‘*’ token
+   94 |   v[i]->*datos = valor;
+      |         ^
+Compilation failed
+1726781
