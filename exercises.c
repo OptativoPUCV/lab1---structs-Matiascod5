@@ -29,7 +29,7 @@ void arrayMaxMin(int *a, int n, int *max, int *min) {
 int mayor = 0;
 int menor = 0;
 
-  for ( int i = 1 ; i < n - 1 ; i++){
+  for ( int i = 1 ; i < n ; i++){
     if ( a[i] > a[i + 1] ){
       mayor = a[i];
     }
