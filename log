@@ -560,3 +560,13 @@ exercises.c:107:15: error: format ‘%i’ expects argument of type ‘int’, b
 cc1: all warnings being treated as errors
 Compilation failed
 bc4a335
+Thu 16 Mar 2023 04:15:45 PM UTC: 
+ exercises.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:94:12: error: incompatible types when assigning to type ‘Vector’ from type ‘int’
+   94 |     v[k] = valor;
+      |            ^~~~~
+Compilation failed
+8757136

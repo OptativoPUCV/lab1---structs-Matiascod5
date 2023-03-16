@@ -90,10 +90,10 @@ Programe la función void asignarValor(Vector * v, int i, int valor),
 la cual asigna el valor a la posición i del vector v.
 */
 void asignarValor(Vector * v, int i, int valor) {
-  /*for ( int k = 0; k > i ; k++){
+  for ( int k = 0; k > i ; k++){
     v[k] = valor;
     
-  }*/
+  }
 }
 
 /*
@@ -103,9 +103,9 @@ la cual retorna el valor en la posición i del vector v.
 */
 int obtenerValor(Vector * v, int i) {
 
-  for ( int j = 0 ; j < i ; j++){
+  /*for ( int j = 0 ; j < i ; j++){
     printf(" %i", v[j]);
-  }
+  }*/
   
    return 0;
 }
