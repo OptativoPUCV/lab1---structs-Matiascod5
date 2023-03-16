@@ -394,3 +394,17 @@ Thu 16 Mar 2023 04:08:13 PM UTC:
  tests:  1|6
 total_score: 10/70
 69e15d9
+Thu 16 Mar 2023 04:10:03 PM UTC: 
+ exercises.c | 17 +++++++++--------
+ 1 file changed, 9 insertions(+), 8 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘arrayMaxMin’:
+exercises.c:31:14: error: expected ‘;’ before ‘for’
+   31 |   *min = a[0]
+      |              ^
+      |              ;
+   32 | 
+   33 |   for ( int i = 0 ; i < n ; i++){
+      |   ~~~         
+Compilation failed
+7b5ff24
