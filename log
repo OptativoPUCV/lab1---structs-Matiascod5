@@ -144,3 +144,33 @@ exercises.c:44:1: error: expected identifier or ‘(’ before ‘}’ token
 cc1: all warnings being treated as errors
 Compilation failed
 e4d57a0
+Thu 16 Mar 2023 03:47:56 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘arrayMaxMin’:
+exercises.c:33:16: error: initialization of ‘int’ from ‘int *’ makes integer from pointer without a cast [-Werror=int-conversion]
+   33 |   int vector = a;
+      |                ^
+exercises.c:36:16: error: subscripted value is neither array nor pointer nor vector
+   36 |     if ( vector[i] > vector[i + 1] ){
+      |                ^
+exercises.c:36:28: error: subscripted value is neither array nor pointer nor vector
+   36 |     if ( vector[i] > vector[i + 1] ){
+      |                            ^
+exercises.c:37:20: error: subscripted value is neither array nor pointer nor vector
+   37 |       *max = vector[i];
+      |                    ^
+exercises.c:41:5: error: expected expression before ‘}’ token
+   41 |     }
+      |     ^
+exercises.c:33:7: error: variable ‘vector’ set but not used [-Werror=unused-but-set-variable]
+   33 |   int vector = a;
+      |       ^~~~~~
+exercises.c: At top level:
+exercises.c:44:1: error: expected identifier or ‘(’ before ‘}’ token
+   44 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+fff9303
