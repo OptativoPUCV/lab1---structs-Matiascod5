@@ -261,3 +261,18 @@ exercises.c:90:12: error: incompatible types when assigning to type ‘Vector’
       |            ^~~~~
 Compilation failed
 f318c37
+Thu 16 Mar 2023 03:54:51 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘arrayMaxMin’:
+exercises.c:33:11: error: assignment to ‘int *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+   33 |       max = a[i];
+      |           ^
+exercises.c: In function ‘asignarValor’:
+exercises.c:87:12: error: incompatible types when assigning to type ‘Vector’ from type ‘int’
+   87 |     v[i] = valor;
+      |            ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+f638dfd
