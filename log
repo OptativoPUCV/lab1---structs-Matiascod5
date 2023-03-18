@@ -1295,3 +1295,16 @@ exercises.c:139:18: error: ‘B’ undeclared (first use in this function)
       |                  ^
 Compilation failed
 bb9f8d0
+Sat 18 Mar 2023 08:25:05 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV2’:
+exercises.c:139:16: error: invalid operands to binary + (have ‘int (*)[(sizetype)(a2)]’ and ‘int (*)[(sizetype)(b2)]’)
+  139 |   c->datos = A + B;
+      |              ~ ^
+      |              | |
+      |              | int (*)[(sizetype)(b2)]
+      |              int (*)[(sizetype)(a2)]
+Compilation failed
+1b878f9
