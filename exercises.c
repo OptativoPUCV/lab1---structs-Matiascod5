@@ -89,7 +89,7 @@ Vector * crearVector(int n) {
   vectorLocal = calloc( n, sizeof( int));
 
   
-   return *vectorLocal;
+   return vectorLocal;
 }
 
 /*
