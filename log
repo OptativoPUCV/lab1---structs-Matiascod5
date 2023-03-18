@@ -991,3 +991,23 @@ Thu 16 Mar 2023 07:37:07 PM UTC:
  tests:  5|3
 total_score: 40/70
 4e7fccf
+Sat 18 Mar 2023 07:42:27 PM UTC: 
+ exercises.c | 7 ++++++-
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:88:18: error: incompatible types when assigning to type ‘Vector’ from type ‘void *’
+   88 |   *vectorLocal = malloc( sizeof( Vector) * n);
+      |                  ^~~~~~
+exercises.c:89:18: error: incompatible types when assigning to type ‘Vector’ from type ‘void *’
+   89 |   *vectorLocal = calloc( n, sizeof( Vector));
+      |                  ^~~~~~
+exercises.c:92:11: error: incompatible types when returning type ‘Vector’ but ‘Vector *’ was expected
+   92 |    return *vectorLocal;
+      |           ^~~~~~~~~~~~
+exercises.c:93:1: error: control reaches end of non-void function [-Werror=return-type]
+   93 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+94ebc7d
