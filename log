@@ -1011,3 +1011,23 @@ exercises.c:93:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 94ebc7d
+Sat 18 Mar 2023 07:42:45 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:88:18: error: incompatible types when assigning to type ‘Vector’ from type ‘void *’
+   88 |   *vectorLocal = malloc( sizeof( int) * n);
+      |                  ^~~~~~
+exercises.c:89:18: error: incompatible types when assigning to type ‘Vector’ from type ‘void *’
+   89 |   *vectorLocal = calloc( n, sizeof( int));
+      |                  ^~~~~~
+exercises.c:92:11: error: incompatible types when returning type ‘Vector’ but ‘Vector *’ was expected
+   92 |    return *vectorLocal;
+      |           ^~~~~~~~~~~~
+exercises.c:93:1: error: control reaches end of non-void function [-Werror=return-type]
+   93 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+4a515b6
