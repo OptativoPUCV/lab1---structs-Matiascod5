@@ -1327,3 +1327,9 @@ exercises.c:138:15: error: initialization of ‘Vector *’ from ‘int’ makes
 cc1: all warnings being treated as errors
 Compilation failed
 674c520
+Sat 18 Mar 2023 08:34:26 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  7|1
+total_score: 60/70
+74e0540
