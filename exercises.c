@@ -87,6 +87,7 @@ Vector * crearVector(int n) {
   Vector *vectorLocal = NULL;
   vectorLocal =  malloc( sizeof( Vector) );
   vectorLocal->datos =  calloc( n, sizeof( int ));
+  vectorLocal->capacidad = n;
 
   
    return vectorLocal;
