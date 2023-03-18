@@ -1107,3 +1107,17 @@ Sat 18 Mar 2023 07:51:06 PM UTC:
  tests:  5|3
 total_score: 40/70
 dde39fb
+Sat 18 Mar 2023 08:04:30 PM UTC: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:88:22: error: assignment to ‘int *’ from incompatible pointer type ‘Vector *’ [-Werror=incompatible-pointer-types]
+   88 |   vectorLocal->datos = ( Vector*) malloc( sizeof( Vector) * n);
+      |                      ^
+exercises.c:89:22: error: assignment to ‘int *’ from incompatible pointer type ‘Vector *’ [-Werror=incompatible-pointer-types]
+   89 |   vectorLocal->datos = ( Vector*) calloc( n, sizeof( Vector ));
+      |                      ^
+cc1: all warnings being treated as errors
+Compilation failed
+fe80761
