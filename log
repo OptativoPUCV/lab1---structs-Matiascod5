@@ -1209,3 +1209,14 @@ Sat 18 Mar 2023 08:16:55 PM UTC:
  tests:  7|1
 total_score: 60/70
 ae6624f
+Sat 18 Mar 2023 08:19:59 PM UTC: 
+ exercises.c | 3 +++
+ 1 file changed, 3 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV2’:
+exercises.c:137:25: error: ‘v’ undeclared (first use in this function)
+  137 |   for ( int i = 0 ; i < v->capacidad ; i++){
+      |                         ^
+exercises.c:137:25: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+10c74b2
