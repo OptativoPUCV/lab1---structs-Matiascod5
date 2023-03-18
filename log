@@ -1249,3 +1249,27 @@ exercises.c:139:23: error: ‘vectorB’ undeclared (first use in this function)
       |                       Vector
 Compilation failed
 38e66a0
+Sat 18 Mar 2023 08:23:42 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV2’:
+exercises.c:137:17: error: expected ‘]’ before ‘,’ token
+  137 |   int vectorA[a1,a2];
+      |                 ^
+      |                 ]
+exercises.c:138:17: error: expected ‘]’ before ‘,’ token
+  138 |   int vectorB[b1,b2];
+      |                 ^
+      |                 ]
+exercises.c:139:14: error: ‘vectorA’ undeclared (first use in this function); did you mean ‘Vector’?
+  139 |   c->datos = vectorA +vectorB;
+      |              ^~~~~~~
+      |              Vector
+exercises.c:139:14: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:139:23: error: ‘vectorB’ undeclared (first use in this function); did you mean ‘Vector’?
+  139 |   c->datos = vectorA +vectorB;
+      |                       ^~~~~~~
+      |                       Vector
+Compilation failed
+d5203a9

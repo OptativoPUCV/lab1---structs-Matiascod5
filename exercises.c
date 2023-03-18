@@ -136,7 +136,7 @@ void sumaV2(int a1, int a2, int b1, int b2, Vector *c){
 
   int vectorA[a1,a2];
   int vectorB[b1,b2];
-  c->datos = vectarA +vectorB;
+  c->datos = vectorA +vectorB;
 
 
   
