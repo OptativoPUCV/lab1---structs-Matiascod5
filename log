@@ -1226,3 +1226,26 @@ Sat 18 Mar 2023 08:20:08 PM UTC:
  tests:  7|1
 total_score: 60/70
 e6937eb
+Sat 18 Mar 2023 08:23:32 PM UTC: 
+ exercises.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV2’:
+exercises.c:137:17: error: expected ‘]’ before ‘,’ token
+  137 |   int vectorA[a1,a2];
+      |                 ^
+      |                 ]
+exercises.c:138:17: error: expected ‘]’ before ‘,’ token
+  138 |   int vectorB[b1,b2];
+      |                 ^
+      |                 ]
+exercises.c:139:14: error: ‘vectarA’ undeclared (first use in this function)
+  139 |   c->datos = vectarA +vectorB;
+      |              ^~~~~~~
+exercises.c:139:14: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:139:23: error: ‘vectorB’ undeclared (first use in this function); did you mean ‘Vector’?
+  139 |   c->datos = vectarA +vectorB;
+      |                       ^~~~~~~
+      |                       Vector
+Compilation failed
+38e66a0
